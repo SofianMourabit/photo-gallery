@@ -71,16 +71,25 @@ Base Layout Styles
   padding-right: 10px;
   font-size: 1.6rem;
 }
-header {
-    padding: 2.4rem 0;
-    max-width: 90%;
-    margin: auto;
+div#gallery {
+    text-align: center;
+}
+input:focus {
+    outline: none;
+    background-color: #d9d9d9;
+    color: #fff
+}
+input{
+    -webkit-transition: background-color 4s ;
+    transition: background-color 4s;
 }
 input {
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     padding: 1rem;
     border: 1px solid #d9d9d9;
+    margin: 4rem;
+    color: #7f8c8d;
 }
 main {
   max-width: 90%;
@@ -89,32 +98,27 @@ main {
 footer {
     text-align: center;
 }
-.gallery a {
+li {
   margin-bottom: 4rem;
   text-align: center;
 }
-.container {
+ul {
 	position: relative;
 	display: flex;
 	flex-flow: row wrap;
 }
-.item {
+li {
   flex-basis: 100%;
 }
 /* =================================
 Media Queries
 ==================================== */
 @media (min-width: 768px) {
-  header {
-      padding: 2.4rem 0;
-      max-width: 40%;
-      margin: auto;
-  }
   main {
     max-width: 80%;
     margin: auto;
   }
-  .item {
+  li {
 		flex-basis: 25%;
 	}
 }
