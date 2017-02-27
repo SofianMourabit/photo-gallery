@@ -84,11 +84,11 @@ input{
     transition: background-color 4s;
 }
 input {
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
     padding: 1rem;
     border: 1px solid #d9d9d9;
-    margin: 4rem;
+    margin: 4rem 0;
     color: #7f8c8d;
 }
 main {
@@ -121,4 +121,8 @@ Media Queries
   li {
 		flex-basis: 25%;
 	}
+  input {
+      width: 50%;
+      margin: 4rem;
+  }
 }
