@@ -80,8 +80,8 @@ input:focus {
     color: #fff
 }
 input{
-    -webkit-transition: background-color 4s ;
-    transition: background-color 4s;
+    -webkit-transition: background-color 1s ;
+    transition: background-color 1s;
 }
 input {
     width: 100%;
