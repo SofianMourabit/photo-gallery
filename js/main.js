@@ -23,18 +23,12 @@ var galleryList = new List('gallery', options);
 $( "#search" ).keyup(function() {
     var inputText= "";
     inputText = $(this).val().toLowerCase();
-
     $( ".item" ).each(function( index ) {
         var captionText = $( this ).attr("title").toLowerCase();
-
         if (!~captionText.indexOf(inputText)){
           $(this).parent().hide();
-          console.log("you are a genius");
         }else {
           $(this).parent().show();
         }
-     // console.log( index + ": " + $( this ).attr("title") );
     });
-
-    console.log(inputText);
 });

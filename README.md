@@ -1,6 +1,6 @@
 # Project Name
 
-Project-04 Front End Developer Track: Interactive Photo Gallery
+Project-04 Front End Developer Track: Interactive Photo Gallery using JavaScript and JQuery
 
 ## Installation
 
