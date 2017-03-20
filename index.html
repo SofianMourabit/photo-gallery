@@ -15,7 +15,27 @@
 <body>
   <main>
     <div id="gallery" class="gallery container">
-      <input type="text" name="search" id="search" placeholder="Caption search box..." class="search">
+      <div class="site-logo">
+        <img src="javascript.png" alt="Made with JS">
+        <h1>Vanilla JS searchbox</h1>
+        <pre><code>
+          let search = document.querySelector('.search');
+          let a = document.querySelectorAll('.item');
+          search.addEventListener("keyup", () => {
+            let inputText = search.value.toLowerCase();
+            for(let i=0; i < a.length; i++ ) {
+              let captionText = a[i].getAttribute("title").toLowerCase();
+              if (captionText.includes(inputText)){
+                a[i].parentElement.style.display = "block";
+              }else{
+                a[i].parentElement.style.display = "none";
+              }
+            }
+          });
+        </code></pre>
+      </diV>
+      <input type="text" name="search" id="search" placeholder="Type in here..." class="search">
+      <div><img class="empty" src="no-photo.png" alt="empty"></div>
       <ul class="list">
         <li>
           <a class="item" href="photos/01.jpg" title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."
@@ -86,7 +106,7 @@
   <p>Copyright &copy; Sofian Mourabit - 2017</p>
 </footer>
 <script src="js/baguettebox/baguetteBox.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 <!--<script src="js/list/list.js"></script>-->
 <script src="js/main.js"></script>
 </body>
